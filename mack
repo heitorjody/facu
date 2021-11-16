@@ -1,0 +1,11 @@
+A = float(input("digite o numero do primeiro lado: "))
+B = float(input("digite o numero do segundo lado: "))
+C = float(input("digite o numero do terceiro lado: "))
+if A>B+C or B>C+A or C>A+B:
+    print ("nao sera possivel formar um triangulo")
+elif (B != C) and (C != A) and (A != B) or (A + C < B):
+    print("o triangulo sera um triangulo escaleno")
+elif B==A==C:
+    print ("o triangulo sera um triangulo equilatero")
+elif (A == B != C) or (B == C != A) or (C == A != B):
+    print("o triangulo sera um triangulo isosceles: ")
